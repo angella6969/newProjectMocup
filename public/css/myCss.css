@@ -64,14 +64,14 @@ footer {
 
 .card {
     background-color: #fff;
-    width: 200px;
+    /* width: 200px; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 .card:hover {
-    transform: translateY(-10px); /* Membuat kartu bergerak 10 piksel ke atas saat dihover */
+    transform: translateY(-10px); 
 }
 .card-container {
     position: relative;

@@ -95,34 +95,41 @@
 {{-- modal --}}
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg"> <!-- Tambahkan kelas modal-lg di sini -->
         <div class="modal-content">
             <div class="modal-header">
                 {{-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> --}}
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="card bg-info text-white  h-100 align-items-center">
-                    <div class="card-body">
-                        <h2>Serayu Bogowonto</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h2>Serayu Bogowonto</h2>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a href="/a" class="small text-white stretched-link"> Views Detail </a>
+                                <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a href="/a" class="small text-white stretched-link"> Views Detail </a>
-                        <div class="small text-white"><i class="fas fa-angel-right"></i></div>
-                    </div>
-                </div>
-                <div class="card bg-success text-white  h-100 align-items-center">
-                    <div class="card-body">
-                        <h2>Progo - Opak - Serang </h2>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a href="/#" class="small text-white stretched-link"> Views Detail </a>
-                        <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                    <div class="col-md-6">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                <h2>Progo - Opak - Serang</h2>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a href="/#" class="small text-white stretched-link"> Views Detail </a>
+                                <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 @endsection
