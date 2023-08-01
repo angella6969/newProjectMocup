@@ -76,3 +76,15 @@ footer {
 .card-container {
     position: relative;
 }
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0); /* Opasitas 0.8 (80% transparan) */
+    border: none; /* Hilangkan border pada modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.modal-header,
+.modal-footer {
+    background-color: rgba(255, 255, 255, 0); /* Opasitas 0.5 (50% transparan) */
+    border: none; /* Hilangkan border pada header dan footer modal */
+}
