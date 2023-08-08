@@ -36,11 +36,8 @@
             <br>
             <nav>
                 <a href="#" class="fs-4">Beranda</a>
-                {{-- <a href="#">Info H3</a> --}}
                 <a href="#" class="fs-4">Berita</a>
-                {{-- <a href="#">Geospasial</a> --}}
                 <a href="#" class="fs-4">Tentang</a>
-                {{-- <a href="#">Dashboard</a> --}}
             </nav>
             <br>
         </div>
