@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PDFController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/', function () {
 Route::get('/map', function () {
     return view('content.map');
 });
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/pdf', function () {
+    return view('content.pdf');
+});
+Route::get('/show-pdf', [PDFController::class,'showPDF'])->name('show.pdf');

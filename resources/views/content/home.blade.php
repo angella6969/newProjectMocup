@@ -140,7 +140,7 @@
                                     <h2>Serayu Bogowonto</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    data-bs-toggle="modal" data-bs-target="#hidroSerbog">
                                     <a href="/#" class="small text-white stretched-link"> Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
@@ -152,7 +152,7 @@
                                     <h2>Progo - Opak - Serang</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    data-bs-toggle="modal" data-bs-target="#hidroPOS">
                                     <a href="/#" class="small text-white stretched-link"> Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
@@ -167,7 +167,7 @@
 
     {{-- modal 2 hidro bogowonto --}}
 
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="hidroSerbog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <!-- Tambahkan kelas modal-lg di sini -->
             <div class="modal-content">
@@ -195,9 +195,80 @@
                                     <h2>Duga Air</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="/map" class="btn btn-danger"> pres</a>
                                     <a href="http://202.157.176.126/data/duga_air"
+                                        class="btn btn-warning h-100 w-100 bergerak image-button">BBWS SO</a>
+                                    <a href="https://pusdataru.jatengprov.go.id/portal_data/curah_hujan"
+                                        class="btn btn-success h-100 w-100 bergerak image-button">BPSDA</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                            <div class="card bg-info text-white h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Kualitas Air</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="#" class="small text-white stretched-link"> Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                            <div class="card bg-info text-white h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Lokasi Stasiun Pengukuran dan Kewenangan</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="http://tatonas.co.id/monitoring/" class="small text-white stretched-link">
+                                        Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="hidroPOS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <!-- Tambahkan kelas modal-lg di sini -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mt-3">
+                            <div class="card bg-info text-white h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Data Hujan</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="http://202.157.176.126/data/curah_hujan"
                                         class="small text-white stretched-link"> Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                            <div class="card bg-info text-white h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Duga Air</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    {{-- <a href="http://202.157.176.126/data/duga_air"
+                                        class="small text-white stretched-link"> Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div> --}}
+                                    <a href="http://202.157.176.126/data/duga_air"
+                                        class="btn btn-warning h-100 w-100 bergerak image-button">BBWS SO</a>
+                                    <a href="https://pusdataru.jatengprov.go.id/portal_data/data_hidrologi"
+                                        class="btn btn-success h-100 w-100 bergerak image-button">BPSDA</a>
                                 </div>
                             </div>
                         </div>
@@ -318,8 +389,12 @@
                                     <h2>Lokasi Stasiun Pengukuran dan Kewenangan </h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a href="/#" class="small text-white stretched-link"> Detail </a>
-                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                    <button onclick="toggleImagePopup('imagePopup2', 'flex')"
+                                        class="btn btn-warning h-100 w-100 bergerak image-button">Lokasi
+                                        Kewenangan</button>
+                                    <button onclick="toggleImagePopup('imagePopup3', 'flex')"
+                                        class="btn btn-success h-100 w-100 bergerak image-button">Lokasi
+                                        Pengukuran</button>
                                 </div>
                             </div>
                         </div>
@@ -362,11 +437,6 @@
                                     <button onclick="toggleImagePopup('imagePopup1', 'flex')"
                                         class="btn btn-success h-100 w-100 bergerak image-button">Lokasi
                                         Pengukuran</button>
-                                    {{-- <button class="image-button"
-                                        onclick="toggleImagePopup('pdfPopup', 'flex', 'public/PDF/Spd_2023-08-04.pdf')">
-                                        Open PDF
-                                    </button> --}}
-
                                 </div>
                             </div>
                         </div>
@@ -387,19 +457,15 @@
         <span class="close-button" onclick="toggleImagePopup('imagePopup1', 'none')">&times;</span>
         <img src="{{ asset('images\IMG_6915 (1).JPG') }}" alt="Popup Image">
     </div>
+    <div class="image-popup" id="imagePopup2">
+        <span class="close-button" onclick="toggleImagePopup('imagePopup2', 'none')">&times;</span>
+        <img src="{{ asset('images\IMG_6915 (1).JPG') }}" alt="Popup Image">
+    </div>
 
-
-
-    {{-- <div class="image-popup" id="pdfPopup">
-        <span class="close-button" onclick="toggleImagePopup('pdfPopup', 'none')">&times;</span>
-        <div id="pdfViewer"></div>
-    </div> --}}
-
-
-
-
-
-
+    <div class="image-popup" id="imagePopup3">
+        <span class="close-button" onclick="toggleImagePopup('imagePopup3', 'none')">&times;</span>
+        <img src="{{ asset('images\IMG_6915 (1).JPG') }}" alt="Popup Image">
+    </div>
 
 
     {{-- modal hidrogeologi --}}
@@ -420,7 +486,7 @@
                                     <h2>Serayu Bogowonto</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModalhidrogeologi1">
+                                    data-bs-toggle="modal" data-bs-target="#hidrogeologiSerbog">
                                     <a href="/#" class="small text-white stretched-link"> Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
@@ -432,7 +498,7 @@
                                     <h2>Progo - Opak - Serang</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModalhidrogeologi1">
+                                    data-bs-toggle="modal" data-bs-target="#hidrogeologiPOS">
                                     <a href="/#" class="small text-white stretched-link"> Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
@@ -447,7 +513,7 @@
 
     {{-- modal 2 hidro bogowonto --}}
 
-    <div class="modal fade" id="exampleModalhidrogeologi1" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="hidrogeologiSerbog" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <!-- Tambahkan kelas modal-lg di sini -->
@@ -475,7 +541,8 @@
                                     <h2>Data Duga Air Tanah</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a href="/#" class="small text-white stretched-link"> Detail </a>
+                                    <a href="http://esdm.jatengprov.go.id/unduh" class="small text-white stretched-link">
+                                        Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
                             </div>
@@ -488,7 +555,8 @@
                                     <h2>Data Lokasi Stasiun Pengukuran dan Keweangan dan Cekungan Air Tanah</h2>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a href="/#" class="small text-white stretched-link"> Detail </a>
+                                    <a href="http://siat.esdm.jatengprov.go.id/" class="small text-white stretched-link">
+                                        Detail </a>
                                     <div class="small text-white"><i class="fas fa-angel-right"></i></div>
                                 </div>
                             </div>
@@ -499,74 +567,71 @@
         </div>
     </div>
 
-    {{-- <script>
-        // Fungsi untuk menampilkan popup gambar
-        function showImagePopup() {
-        const imagePopup = document.getElementById('imagePopup');
-        imagePopup.style.display = 'flex';
-    }
 
-        // Fungsi untuk menyembunyikan popup gambar
-        function hideImagePopup() {
-            const imagePopup = document.getElementById('imagePopup');
-            imagePopup.style.display = 'none';
-        }
+    <div class="modal fade" id="hidrogeologiPOS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <!-- Tambahkan kelas modal-lg di sini -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card bg-info text-white mt-3 h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Data Neraca Air Tanah</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="/#" class="small text-white stretched-link"> Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card bg-info text-white mt-3 h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Data Duga Air Tanah</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="#" class="small text-white stretched-link"> Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
 
 
-        function showImagePopup1() {
-        const imagePopup = document.getElementById('imagePopup1');
-        imagePopup.style.display = 'flex';
-    }
+                        <div class="col-md-4">
+                            <div class="card bg-info text-white mt-3 h-100 w-100">
+                                <div class="card-body">
+                                    <h2>Data Lokasi Stasiun Pengukuran dan Keweangan dan Cekungan Air Tanah</h2>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="#" class="small text-white stretched-link"> Detail </a>
+                                    <div class="small text-white"><i class="fas fa-angel-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        // Fungsi untuk menyembunyikan popup gambar
-        function hideImagePopup1() {
-            const imagePopup = document.getElementById('imagePopup1');
-            imagePopup.style.display = 'none';
-        }
-    </script> --}}
+
+    <a href="{{ route('show.pdf') }}">Buka PDF</a>
 
     <script>
-        // Fungsi untuk menampilkan atau menyembunyikan popup gambar
         function toggleImagePopup(elementId, displayValue) {
             const imagePopup = document.getElementById(elementId);
             imagePopup.style.display = displayValue;
         }
     </script>
 
-    {{-- <script>
-        function toggleImagePopup(elementId, displayValue, pdfUrl) {
-            const imagePopup = document.getElementById(elementId);
-            imagePopup.style.display = displayValue;
-
-            if (displayValue === 'flex') {
-                // Muat PDF menggunakan PDF.js
-                const pdfViewer = document.getElementById('pdfViewer');
-                pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
-                    pdf.getPage(1).then(page => {
-                        const scale = 1.5;
-                        const viewport = page.getViewport({
-                            scale
-                        });
-                        const canvas = document.createElement('canvas');
-                        const context = canvas.getContext('2d');
-                        canvas.height = viewport.height;
-                        canvas.width = viewport.width;
-
-                        const renderContext = {
-                            canvasContext: context,
-                            viewport: viewport
-                        };
-
-                        page.render(renderContext).promise.then(() => {
-                            pdfViewer.appendChild(canvas);
-                        });
-                    });
-                });
-            } else {
-                // Hapus PDF saat popup disembunyikan
-                const pdfViewer = document.getElementById('pdfViewer');
-                pdfViewer.innerHTML = '';
-            }
-        }
-    </script> --}}
+    <script>
+        document.getElementById('open-pdf').addEventListener('click', function() {
+            document.getElementById('pdf-popup').style.display = 'block';
+        });
+    </script>
 @endsection
